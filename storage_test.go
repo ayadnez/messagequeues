@@ -16,7 +16,7 @@ func TestStorage(t *testing.T) {
 				t.Error(err)
 			}
 
-			data, err := m.Fetch(latestOffset)
+			data, err := m.Get(latestOffset)
 			if err != nil {
 				t.Error(err)
 			}
